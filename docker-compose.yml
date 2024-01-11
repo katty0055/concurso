@@ -1,0 +1,20 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "9200:9200"
+    depends_on:
+      - db
+    environment:
+      DJANGO_DB_HOST: db
+      DJANGO_DB_PORT: 5432
+      DJANGO_DB_NAME: cas
+      DJANGO_DB_USER: cas
+      DJANGO_DB_PASSWORD: --cas--
+    container_name: backend-concurso
+    restart: always

@@ -1,0 +1,35 @@
+# Archivos de entorno y configuración local
+.env
+*.sqlite3
+*.pyc
+
+# Archivos generados por IDE y editores de texto
+.vscode/
+.idea/
+*.pyc
+
+# Archivos de migraciones de Django
+#**/migrations/
+
+# Directorio de archivos estáticos generados por collectstatic
+staticfiles/
+
+# Archivos de registro
+*.log
+
+# Directorio de archivos de medios
+media/
+
+# Virtual environment
+venv/
+env/
+
+# Dependencias de Python
+/.venv/
+/lib/
+/pip-selfcheck.json
+
+# Archivos de respaldo y temporales
+*.bak
+*.swp
+*~
